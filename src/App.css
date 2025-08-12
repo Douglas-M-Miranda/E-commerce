@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #DBF5F0;
+}
+
+/* setting menu */
+.containerMenu {
+    background-color: #caf8f4;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1.2em;
+    height: 7vh;
+}
+
+.menuLogo {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: #000c18;
+}
+
+.MenuItems {
+    display: flex;
+
+    list-style: none;
+}
+
+.itemLink {
+    border-radius: 5px;
+    
+    padding: .8em;
+    
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    color: #001529;
+    transition: 0.1s;
+}
+
+.itemLink:hover {
+    color: #34bbb3;
+    background-color: #dbf5f05d;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.itemLink:active {
+    background-color: #dbf5f023;
+}
+
+@media screen and (width: 320px) {
+    .menuLogo {
+        font-size: .9rem;
+    }
+
+    .itemLink {
+        font-size: .8rem;
+
+        padding: .5em;
+    }
+}

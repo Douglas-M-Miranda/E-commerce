@@ -1,0 +1,104 @@
+.mainHome {
+    min-height: 93vh;
+
+    padding-top: 1em;
+}
+
+.containerIntroduction {
+    background-color: #c9f3eb;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 6px;
+    
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+    margin: 0 auto;
+    padding: 2em;
+
+    width: 90%;
+}
+
+.aboutPage {
+    align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+
+.drawing img {
+    width: 30em;
+}
+
+.divSeeMore {
+    margin-top: 2em;
+    margin-left: 9%;
+}
+
+.SeeMore {
+    font-family: "Lato", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000c18;
+}
+
+.SeeMore:hover {
+    color: #34bbb3;
+    text-decoration: underline;
+}
+
+.containerProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    
+    width: 100%;
+}
+
+.productsItems {
+    background-color: #c9f3eb;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    padding: 1em;
+    width: 85%;
+    min-height: 8em;
+    overflow: hidden;
+}
+
+.productsItems ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+}
+
+.productsItems ul li img {
+    width: 100%;
+    max-width: 65%;
+}
+
+@media screen and (min-width: 320px) {
+    .containerIntroduction {
+        align-items: center;
+    }
+
+    .aboutPage {
+        font-size: .7rem;
+    }
+
+    .drawing img {
+        width: 6em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutPage {
+        font-size: 1.5rem;
+    }
+
+    .drawing img {
+        width: 30em;
+    }
+}

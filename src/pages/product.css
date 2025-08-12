@@ -1,0 +1,100 @@
+.productCards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 30vw));
+    gap: 2em;
+
+    margin: 1em;
+}
+
+.containerCard {
+    background-color: #caf8f4;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    height: auto;
+}
+
+.cardImage img {
+    background-color: rgba(255, 255, 255, 0.644);
+    
+    padding: .5em;
+    
+     width: 100%;
+    aspect-ratio: 4 / 3; /* largura/altura */
+    object-fit: cover;
+    display: block;
+}
+
+.cardDescrition h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #00312e;
+
+    /* margin-top: .6em; */
+}
+
+.cardDescrition p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #001529;
+
+    margin-top: .3em;
+    /* max-width: 100em; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cardPriceButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .6em;
+}
+
+.cardPriceButton p {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #00312e;
+}
+
+.cardPriceButton button {
+    background-color: #dbf5f0ec;
+    border: 1px solid #00312e;
+    border-radius: 5px;
+
+    padding: .5em;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: #00312e;
+
+    transition: 0.2s;
+}
+
+.cardPriceButton button:hover {
+    background-color: #00312e;
+    border: 1px solid #dbf5f0ec;
+
+    color: #dbf5f0ec;
+}
+
+@media screen and (width: 320px) {
+    .productCards {
+        grid-template-columns: repeat(1, minmax(250px, 30vw));
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .productCards {
+        grid-template-columns: repeat(6, minmax(250px, 15vw));
+    }
+}
