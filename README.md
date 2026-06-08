@@ -1,12 +1,36 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛒 E-Commerce
 
-Currently, two official plugins are available:
+Web application built with React that consumes the [FakeStoreAPI](https://fakestoreapi.com/), simulating an online sales store.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Screenshot](src/assets/Screenshot-E-commecer-project.png)  
+*Homepage displaying the product listing.*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Technologies Used
+
+- **HTML5** – Semantic structure of the application  
+- **CSS3** – Styling and responsiveness  
+- **React** – Library for building the user interface  
+  - **Axios** – API consumption using `async/await` and `Promises`  
+  - **Array methods** – Data manipulation (`map`, `find`)  
+  - **react-router-dom** – Page routing (`useParams`)  
+
+---
+
+## 🚀 Features
+
+- Consumes the public API `https://fakestoreapi.com/products`  
+- Product listing with image, title, description, and price  
+- Detail page for each product  
+- Feedback message when no products are found  
+- Smooth navigation between pages  
+
+---
+
+## 📥 Installation and Running
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/e-commerce.git
